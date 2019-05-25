@@ -20,4 +20,4 @@ In this repo you can find my documentation about the tutorial of firebase by the
 5.  After you have made your first document the record of that document will be appear in the collection that you have made.
     *   In the middle column you can find the document id's
     *   If you click on those id's you can see the property's and value's attached to that record/document
-![First Collection](./images/readme/Identefirepng)
+![First Collection](./images/readme/Identefire.png)
