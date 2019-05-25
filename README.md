@@ -25,3 +25,11 @@ In this repo you can find my documentation about the tutorial of firebase by the
     *   In the middle column you can find the document id's
     *   If you click on those id's you can see the property's and value's attached to that record/document
 ![First Collection](./images/readme/Identefire.png)
+6.  To connect your website with the firebase server you need to add some scripts into your project. These scripts can be found in `Project overview > Web`
+    *   This line of code is required to load in the firebase library. We are only loading in the library's that we need. 
+    ```html
+    <!-- The core app library -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <!-- The Firestore database -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    ``` 
