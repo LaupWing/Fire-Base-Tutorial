@@ -1,7 +1,12 @@
 # Firebase Tutorial
 In this repo you can find my documentation about the tutorial of firebase by the net ninja
 [Click here to open the link to the tutorial](https://www.youtube.com/watch?v=4d-gIPGzmK4)
-
+## Table of contents
+*   [Journal](#journal)
+    * [25 may 2019](25-may-2019)
+        * [25 may 2019](25-may-2019)
+        * [Firebase Firestore Tutorial #1 - Introduction](firebase-firestore tutorial-#1---introduction)
+        * [Firebase Firestore Tutorial #2 - Setting up Firestore](firebase-firestore-tutorial-#2---setting-up-firestore)
 ## Journal
 ### 25 may 2019
 #### Firebase Firestore Tutorial #1 - Introduction
