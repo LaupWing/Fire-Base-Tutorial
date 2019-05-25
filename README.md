@@ -5,7 +5,7 @@ In this repo you can find my documentation about the tutorial of firebase by the
 *   [Journal](#journal)
     * [25 may 2019](25-may-2019)
         * [25 may 2019](25-may-2019)
-        * [Firebase Firestore Tutorial #1 - Introduction](firebase-firestore tutorial-#1---introduction)
+        * [Firebase Firestore Tutorial #1 - Introduction](firebase-firestore-tutorial-#1---introduction)
         * [Firebase Firestore Tutorial #2 - Setting up Firestore](firebase-firestore-tutorial-#2---setting-up-firestore)
 ## Journal
 ### 25 may 2019
