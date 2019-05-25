@@ -33,3 +33,15 @@ In this repo you can find my documentation about the tutorial of firebase by the
     <!-- The Firestore database -->
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
     ``` 
+    *   The Firebase config object: In the firebase object you can find all the info needed to connect with your firebase account.
+    ```js
+    var firebaseConfig = {
+        apiKey: "AIzaSyBKsUGGsxBgl94Tc84MYhbHlq_hOxXyijk",
+        authDomain: "fir-tutorial-netninja.firebaseapp.com",
+        databaseURL: "https://fir-tutorial-netninja.firebaseio.com",
+        projectId: "fir-tutorial-netninja",
+        storageBucket: "fir-tutorial-netninja.appspot.com",
+        messagingSenderId: "601917374255",
+        appId: "1:601917374255:web:68a2a16546e420de"
+    };
+    ```
