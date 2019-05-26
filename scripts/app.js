@@ -1,5 +1,6 @@
 // Which collection do you want to grab
 const container = document.querySelector('ul#cafe-list')
+const form = document.querySelector('form#add-cafe-form')
 
 // Create element
 function renderElement(doc){
@@ -21,4 +22,13 @@ db.collection('Cafes').get().then(result=>{
         console.log(x.data())
         renderElement(x)    
     })
+})
+
+form.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    db.collection('Cafes').add({
+        name: form.name.value,
+        city: form.city.value
+    })
+    form.querySelectorAll('input[type="text"]').forEach(input=>input.value = '')
 })

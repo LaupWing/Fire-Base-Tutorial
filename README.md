@@ -8,6 +8,7 @@ In this repo you can find my documentation about the tutorial of firebase by the
         * [Firebase Firestore Tutorial 2 Setting up Firestore](#firebase-firestore-tutorial-2-setting-up-firestore)
     * [26 may 2019](#26-may-2019)
         * [Firebase Firestore Tutorial 3 Getting Documents](#firebase-firestore-tutorial-3-getting-documents)
+        * [Firebase Firestore Tutorial 4 Saving Data](#firebase-firestore-tutorial-4-saving-data)
 ## Journal
 ### 25 may 2019
 #### Firebase Firestore Tutorial 1 Introduction
@@ -66,3 +67,12 @@ In this repo you can find my documentation about the tutorial of firebase by the
         result.data()    
     })
     ```
+#### Firebase Firestore Tutorial 4 Saving Data
+*   Adding data to a collection
+    ```js
+    // Grab the Collection and use the add function. This funciton needs an object to save it in the collection
+    db.collection('Cafes').add({
+        name: form.name.value,
+        city: form.city.value
+    })
+    ``` 
