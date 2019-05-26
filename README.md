@@ -85,3 +85,13 @@ In this repo you can find my documentation about the tutorial of firebase by the
     let id = e.target.parentElement.getAttribute('data-id')
     db.collection('Cafes').doc(id).delete()
     ```
+#### Firebase Firestore Tutorial 6 Making Queries
+1.  To make a query you need to use the `.where` method
+2.  The where methods needs 3 parameters
+3.  First is the Property 
+4.  Second is the condition like `==/!==/<` etc
+5.  Last one is the condition value
+    ```js
+    db.collection('Cafes').where('city', '==', 'Amsterdam')
+    ```  
+    

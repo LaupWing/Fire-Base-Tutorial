@@ -29,8 +29,13 @@ function renderElement(doc){
 
 db.collection('Cafes').get().then(result=>{
     result.docs.forEach(x=>{
-        console.log(x.data())
         renderElement(x)    
+    })
+})
+
+db.collection('Cafes').where('city', '==', 'Amsterdam').get().then(snapshot=>{
+    snapshot.docs.forEach(doc=>{
+        console.log(doc.data())
     })
 })
 
