@@ -45,4 +45,22 @@ In this repo you can find my documentation about the tutorial of firebase by the
         appId: "1:601917374255:web:68a2a16546e420de"
     };
     ```
-    
+### 26 may 2019
+#### Firebase Firestore Tutorial 3 Getting Documents
+*   Connecting to the database collection
+    ```js
+    db.collection('Cafes').get().then(result=>{    
+    })
+    ```
+*   Getting the id from the document
+    ```js
+    db.collection('Cafes').get().then(result=>{
+        result.id    
+    })
+    ```
+*   Getting all data from the document
+    ```js
+    db.collection('Cafes').get().then(result=>{
+        result.data()    
+    })
+    ```
