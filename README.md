@@ -9,6 +9,9 @@ In this repo you can find my documentation about the tutorial of firebase by the
     * [26 may 2019](#26-may-2019)
         * [Firebase Firestore Tutorial 3 Getting Documents](#firebase-firestore-tutorial-3-getting-documents)
         * [Firebase Firestore Tutorial 4 Saving Data](#firebase-firestore-tutorial-4-saving-data)
+        * [Firebase Firestore Tutorial 5 Deleting Data](#firebase-firestore-tutorial-5-deleting-data)
+        * [Firebase Firestore Tutorial 6 Making Queries](#firebase-firestore-tutorial-6-making-queries)
+
 ## Journal
 ### 25 may 2019
 #### Firebase Firestore Tutorial 1 Introduction
