@@ -75,4 +75,13 @@ In this repo you can find my documentation about the tutorial of firebase by the
         name: form.name.value,
         city: form.city.value
     })
-    ``` 
+    ```
+#### Firebase Firestore Tutorial 5 Deleting Data
+*   Event Propagation?
+*   Deleting a record/document
+    *   Get the id of the document u want to remove
+    *   Delete that one document
+    ```js
+    let id = e.target.parentElement.getAttribute('data-id')
+    db.collection('Cafes').doc(id).delete()
+    ```
