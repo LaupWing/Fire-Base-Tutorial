@@ -33,12 +33,26 @@ db.collection('Cafes').get().then(result=>{
     })
 })
 
+// Condition
 db.collection('Cafes').where('city', '==', 'Amsterdam').get().then(snapshot=>{
+    snapshot.docs.forEach(doc=>{
+        // console.log(doc.data())
+    })
+})
+
+// Ordering
+db.collection('Cafes').orderBy('name').get().then(snapshot=>{
+    snapshot.docs.forEach(doc=>{
+        // console.log(doc.data())
+    })
+})
+
+// Chaining
+db.collection('Cafes').where('city', '==', 'Amsterdam').orderBy('name').get().then(snapshot=>{
     snapshot.docs.forEach(doc=>{
         console.log(doc.data())
     })
 })
-
 form.addEventListener('submit', (e)=>{
     e.preventDefault()
     db.collection('Cafes').add({

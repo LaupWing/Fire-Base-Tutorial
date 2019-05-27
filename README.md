@@ -11,6 +11,8 @@ In this repo you can find my documentation about the tutorial of firebase by the
         * [Firebase Firestore Tutorial 4 Saving Data](#firebase-firestore-tutorial-4-saving-data)
         * [Firebase Firestore Tutorial 5 Deleting Data](#firebase-firestore-tutorial-5-deleting-data)
         * [Firebase Firestore Tutorial 6 Making Queries](#firebase-firestore-tutorial-6-making-queries)
+    * [27 may 2019](#27-may-2019)
+        * [Firebase Firestore Tutorial 7 Ordering Data](#firebase-firestore-tutorial-7-ordering-data)
 
 ## Journal
 ### 25 may 2019
@@ -97,4 +99,16 @@ In this repo you can find my documentation about the tutorial of firebase by the
     ```js
     db.collection('Cafes').where('city', '==', 'Amsterdam')
     ```  
-    
+### 27 may 2019
+#### Firebase Firestore Tutorial 7 Ordering Data
+*   You can order data by adding a function before you get the data
+    *   This function only accepts the property that you want to order in
+    ```js
+    db.collection('Cafes').orderBy('name').get()
+    ```
+*   It is possible to chain multiple queries to get a more accurate result
+    ```js
+    db.collection('Cafes').where('city', '==', 'Amsterdam').orderBy('name').get()
+    ```
+    *   Sometimes you have an index error thrown by firebase. To resolve this you need to click on the link and build the indexes for that query search
+    ![error](images/readme/indexerror.png)
