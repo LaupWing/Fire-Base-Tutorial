@@ -1,6 +1,9 @@
 # Firebase Tutorial
 In this repo you can find my documentation about the tutorial of firebase by the net ninja
 [Click here to open the link to the tutorial](https://www.youtube.com/watch?v=4d-gIPGzmK4)
+
+[Click here to see the prototype made in](https://xenodochial-bohr-3f4d60.netlify.com/)
+
 ## Table of contents
 *   [Journal](#journal)
     * [25 may 2019](#25-may-2019)
