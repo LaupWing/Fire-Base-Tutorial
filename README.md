@@ -114,3 +114,19 @@ In this repo you can find my documentation about the tutorial of firebase by the
     ![error](images/readme/indexerror.png)
 #### Firebase Firestore Tutorial 8 Realtime Data
 *   Firebase has an build in realtime data checker in a form of an event. The event is called onSnapshot.
+    *   In order to see the state of a record you have to start the `docChanges` event on every snapshot.
+    *   Every snapshot has three states `update` `removed` `added`
+    *   `added` is the initial data
+    *   `removed` is removed data
+    *   `updated` is updated data
+    ```js
+    db.collection('Cafes').orderBy('city').onSnapshot(snapshot=>{
+        let changes = snapshot.docChanges()
+        changes.forEach(change=>{
+            console.log(change.doc.data())
+            if(change.type === 'added')             renderElements(change.doc)
+            else if(change.type === 'removed')      removeElement(change.doc.id)
+        })
+    })
+    ```
+
