@@ -112,3 +112,5 @@ In this repo you can find my documentation about the tutorial of firebase by the
     ```
     *   Sometimes you have an index error thrown by firebase. To resolve this you need to click on the link and build the indexes for that query search
     ![error](images/readme/indexerror.png)
+#### Firebase Firestore Tutorial 8 Realtime Data
+*   Firebase has an build in realtime data checker in a form of an event. The event is called onSnapshot.
