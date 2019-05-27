@@ -129,4 +129,20 @@ In this repo you can find my documentation about the tutorial of firebase by the
         })
     })
     ```
+#### Firebase Firestore Tutorial 9 Updating Data
+*   Updating data can be done with `update` and `set`
+    *   First you need to grab the id of the record you want to update by `.doc(id)`
+    *   Second you can update it by using the `update` or `set` methods
+        *   `Set` overwrites the whole record
+        *   `Update` only updates the assigned property
+    ```js
+    // This only updates city property of the specifik id
+    db.collection('Cafes').doc(id).update({
+        city: 'Heiloo'
+    })
+    // This only overwrites everything of the specifik id
+    db.collection('Cafes').doc(id).set({
+        city: 'Heiloo'
+    })
+    ```
 
